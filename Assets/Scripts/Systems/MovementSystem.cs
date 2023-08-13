@@ -24,7 +24,13 @@ namespace NTC.Source.Code.Ecs
                 ref var speed = ref movableComponent.speed;
 
                 var rawDirection = (transform.right * direction.x);
+
+                //Лучше вывести в GravitySystem
+                ref var velocity = ref movableComponent.velocity;
+                velocity.y += movableComponent.gravity * Time.deltaTime;
+
                 characterController.Move(rawDirection * speed * Time.deltaTime);
+                characterController.Move(velocity * Time.deltaTime);
             }
         }
     }

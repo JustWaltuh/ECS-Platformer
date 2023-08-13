@@ -7,6 +7,8 @@ namespace NTC.Source.Code.Ecs
     public struct MovableComponent
     {
         public CharacterController characterController;
+        public Vector3 velocity;
         public float speed;
+        public float gravity;
     }
 }
