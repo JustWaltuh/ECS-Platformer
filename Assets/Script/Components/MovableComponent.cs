@@ -1,10 +1,12 @@
 using UnityEngine;
+using System;
 
 namespace NTC.Source.Code.Ecs
 {
-    internal struct MovableComponent
+    [Serializable]
+    public struct MovableComponent
     {
-        public CharacterController CharacterController;
-        public float Speed;
+        public CharacterController characterController;
+        public float speed;
     }
 }

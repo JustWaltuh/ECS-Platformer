@@ -1,6 +1,9 @@
-﻿namespace NTC.Source.Code.Ecs
+﻿using System;
+
+namespace NTC.Source.Code.Ecs
 {
-    internal struct PlayerTag
+    [Serializable]
+    public struct PlayerTag
     {
 
     }

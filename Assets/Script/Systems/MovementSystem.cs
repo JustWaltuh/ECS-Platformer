@@ -20,8 +20,8 @@ namespace NTC.Source.Code.Ecs
                 ref var direction = ref directionComponent.Direction;
                 ref var transform = ref modelComponent.ModelTransform;
 
-                ref var characterController = ref movableComponent.CharacterController;
-                ref var speed = ref movableComponent.Speed;
+                ref var characterController = ref movableComponent.characterController;
+                ref var speed = ref movableComponent.speed;
 
                 var rawDirection = (transform.right * direction.x);
                 characterController.Move(rawDirection * speed * Time.deltaTime);

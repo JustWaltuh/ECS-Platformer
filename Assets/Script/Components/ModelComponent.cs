@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using System;
 
 namespace NTC.Source.Code.Ecs
 {
-    internal struct ModelComponent
+    [Serializable]
+    public struct ModelComponent
     {
         public Transform ModelTransform;
     }

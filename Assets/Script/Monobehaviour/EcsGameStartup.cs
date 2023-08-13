@@ -30,7 +30,9 @@ namespace NTC.Source.Code.Ecs
 
         private void AddSystems()
         {
-
+            _systems.
+                Add(new PlayerInputSystem()).
+                Add(new MovementSystem());
         }
 
         private void AddOneFrames()
