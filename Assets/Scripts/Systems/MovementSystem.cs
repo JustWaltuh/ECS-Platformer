@@ -5,8 +5,6 @@ namespace NTC.Source.Code.Ecs
 {
     sealed class MovementSystem : IEcsRunSystem
     {
-        private readonly EcsWorld _world = null;
-
         private readonly EcsFilter<ModelComponent, MovableComponent, DirectionComponent> movableFilter = null;
 
         public void Run()

@@ -35,6 +35,7 @@ namespace NTC.Source.Code.Ecs
                 Add(new GroundCheckSystem()).
                 Add(new PlayerInputSystem()).
                 Add(new PlayerJumpSystem()).
+                Add(new CameraFollowSystem()).
                 Add(new MovementSystem());
         }
 
