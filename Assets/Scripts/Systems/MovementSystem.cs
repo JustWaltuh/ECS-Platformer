@@ -23,7 +23,7 @@ namespace NTC.Source.Code.Ecs
                 ref var characterController = ref movableComponent.characterController;
                 ref var speed = ref movableComponent.speed;
 
-                var rawDirection = (transform.right * direction.x);
+                var rawDirection = (transform.forward * direction.x);
 
                 //Лучше вывести в GravitySystem
                 ref var velocity = ref movableComponent.velocity;
